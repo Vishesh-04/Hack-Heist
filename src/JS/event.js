@@ -38,7 +38,7 @@ const events = [
   {
     title: "Fetchathon 1.0",
     images: [
-      { src: "src/image/FETCH1.JPG" },
+      { src: "src/image/FETCH1.jpg" },
       { src: "src/image/FETCH2.jpg" },
       {
         src: "src/image/FETCH3.jpg",
