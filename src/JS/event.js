@@ -2,7 +2,7 @@ const events = [
   {
     title: "Bharat Shiksha Expo Hackathon",
     images: [
-      { src: "/src/image/bharat1.JPG", description: "" },
+      { src: "/src/image/bharat1.jpg", description: "" },
       { src: "src/image/bharat2.jpg", description: "Sponsor's Session" },
       // { src: "/images/cocv1/image2.png", description: "Innovative ideas" },
       // {
