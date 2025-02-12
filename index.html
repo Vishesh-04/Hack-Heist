@@ -8,8 +8,10 @@
   <link href="src/input.css" rel="stylesheet">
   <link rel="stylesheet" href="src/output.css">
   <link rel="stylesheet" href="src/CSS/style.css">
+  <link rel="stylesheet" href="src/CSS/faq.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,6 +20,7 @@
 </head>
 
 <body class="bg-black">
+  <!-- Navbar Section -->
   <header
     class='fixed justify-center flex shadow-lg sm:px-10 size-fit font-[Barlow Condensed] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky border-6 z-50 border-red-600 rounded-4xl'>
 
@@ -74,12 +77,31 @@
           <li class='max-lg:border-b py-4 px-3'><a href='#team'
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>Our Team</a>
           </li>
-          <li class='max-lg:border-b py-4 px-3'><a href='#contact'
-              class='hover:text-red-500 text-white block font-semibold text-[15px]'>Contact Us</a>
+          <li class='max-lg:border-b py-4 px-3'>
+            <button id="registerBtn" class='hover:text-red-500 text-white block font-semibold text-[15px]'
+              data-popover-target="popover-bottom" data-popover-placement="bottom" type="button">
+              Join US
+            </button>
+            <div data-popover id="popover-bottom" role="tooltip"
+              class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+              <div class="px-3 py-2 bg-[#000505] border-b border-[#db0c26] rounded-t-lg">
+                <h3 class="font-semibold text-white">Join US</h3>
+              </div>
+              <div class="px-3 py-2 bg-[#db0c26] text-white">
+                <ul>
+                  <li><a href="">Participants</a></li>
+                  <li><a href="">Sponsors</a></li>
+                  <li><a href="">Community Partners</a></li>
+                </ul>
+              </div>
+              <div data-popper-arrow></div>
+            </div>
           </li>
+
         </ul>
 
       </div>
+
 
       <button id="toggleOpen" class='lg:hidden md:ps-48 xs:ps-24'>
         <svg class="w-7 h-7" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +114,7 @@
     </div>
     </div>
   </header>
-
+  <!-- Hero Section -->
   <section id="hero">
     <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
       <div class="lg:w-1/2 lg:h-auto">
@@ -110,8 +132,7 @@
       </div>
     </div>
   </section>
-
-
+  <!-- Time Section -->
   <section id="about-section" class="section about-section">
     <div class="py-8">
       <a href=""
@@ -131,33 +152,56 @@
       </div>
     </div>
   </section>
-
-  <section id="about" class="scroll-m-20">
-    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-      <h2 class="text-9xl font-bold font-[Staatliches] text-center mb-8 uppercase ">About <span class="text-[#db0c26]">Hack
+  <!-- About Section -->
+  <section id="about" class="scroll-m-20 ">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white items-center justify-center">
+      <h2 class="text-8xl font-bold font-[Staatliches] text-center mb-8 uppercase items-center">About <span
+          class="text-[#db0c26]">Hack
           Hiest</span></h2>
-      <p class="text-center text-xl mt-6 mx-2 font-[Barlow Condensed]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        cupiditate quod nihil quam dolor facere officia expedita dolores nulla fugiat, dolorem itaque. Quidem dolore
-        ducimus maxime, obcaecati aliquid laborum corporis, minima illo eum veritatis quaerat itaque! Temporibus officia
-        similique, quos libero quod id ab illo itaque magni totam delectus exercitationem non eaque voluptatem, illum
-        dolor consectetur. Facilis nesciunt ea laboriosam quae consectetur nostrum eius sint beatae, dolorem eos a,
-        error neque, culpa in. Exercitationem, alias eligendi possimus, ipsa dolores in sunt quibusdam hic, modi porro
-        consequuntur quia! Quidem soluta perferendis necessitatibus, ullam saepe, sunt harum nobis pariatur dicta
-        reiciendis quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium soluta corrupti iure
-        in consectetur ad! Et nobis odit cumque natus, necessitatibus maxime enim odio, cum aspernatur blanditiis saepe.
-        Molestiae, mollitia. Accusamus eius aspernatur ipsa exercitationem nulla maiores consequatur provident unde
-        molestiae! Iste, accusamus iusto. Dolore vitae reprehenderit labore omnis veritatis recusandae voluptatem
-        repellat veniam illum laudantium aliquam excepturi cupiditate vel praesentium natus error harum ut, quod fugit
-        quaerat pariatur possimus quia! Esse odio quidem qui laboriosam adipisci perferendis voluptatem nulla nam sed.
-        Similique eos totam necessitatibus fugiat maxime vel placeat incidunt reiciendis facilis. Placeat quod
-        accusamus, ad sapiente laboriosam magnam?</p>
+          <div class="flex items-center justify-center p-2">
+            <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
+              <!-- Image Section -->
+              <div class="sm:w-1/2 p-10">
+                <div class="image object-center">
+                  <img src="src/image/hero.png" class="mx-auto">
+                </div>
+              </div>
+              <!-- Text Section -->
+              <div class="sm:w-1/2 p-5">
+                <div class="text">
+                  <p class="text-white">
+                    GDG On Campus MIET proudly presents "Hack Heist," a 36-hour hackathon bringing together tech enthusiasts,
+                    developers,
+                    and problem-solvers for an intense innovation sprint.
+                    <br><br>
+                    More than just a hackathon, Hack Heist is a platform to turn ideas into reality, tackle real-world challenges,
+                    and build
+                    impactful solutions. With a focus on collaboration, strategy, and cutting-edge technology, this hackathon will
+                    test your
+                    skills, push your limits, and spark innovation.
+                    <br><br>
+                    Participants will engage in hands-on development, expert mentorship, and interactive sessions, while
+                    networking with
+                    like-minded innovators. Whether you're here to learn, compete, or create something groundbreaking, Hack Heist
+                    is your
+                    stage to shine.
+                    <br><br>
+                    📅 Date: 29th & 30th March (Saturday & Sunday) <br>
+                    ⏳ Duration: 36 Hours <br>
+                    📍 Venue: MIET
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </div>
   </section>
-
+  <!-- Past Event Section -->
   <section id="pastevents"
     class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-      <h2 class="text-9xl md:text-6xl font-bold text-center mb-8 uppercase font-[Staatliches]">Past <span
+      <h2 class="text-8xl md:text-6xl font-bold text-center mb-8 uppercase font-[Staatliches]">Past <span
           class="text-[#db0c26]">Events</span></h2>
 
       <div id="events-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"></div>
@@ -173,12 +217,13 @@
       </div>
     </div>
   </section>
-
+  <!-- TimeLine Section -->
   <section id="timeline" class="scroll-m-20">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-      <h2 class="text-9xl md:text-6xl font-bold font-[Staatliches] text-center mb-8 uppercase ">Event <span
+      <h2 class="text-8xl md:text-6xl font-bold font-[Staatliches] text-center mb-8 uppercase ">Event <span
           class="text-[#db0c26]">Schedule</span></h2>
-      <div class="relative max-w-4xl mx-auto font-[Barlow Condensed]">
+      <p class="text-center text-xl mt-6 mx-2 font-[Barlow Condensed]">To be Announced</p>
+      <!-- <div class="relative max-w-4xl mx-auto font-[Barlow Condensed]">
         <div class="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-1 bg-gray-800">
           <div class="absolute top-0 left-0 w-1 bg-{#db0c26}" style="height: 0px;"></div>
         </div>
@@ -556,25 +601,26 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
-
+  <!-- Prize Section -->
   <section id="prize"
     class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-      <h2 class="text-8xl md:text-6xl font-bold font-[Staatliches] text-center mb-8 uppercase">Prize <span
+      <h2 class="text-8xl  font-bold font-[Staatliches] text-center mb-8 uppercase">Prize <span
           class="text-[#db0c26]">Pool</span></h2>
       <p class="text-center text-xl mt-6 mx-2 font-[Barlow Condensed]">To be Announced</p>
     </div>
   </section>
-
+  <!-- Sponsor Section -->
   <section id="sponsors"
     class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Staatliches] text-center mb-8 uppercase">Our <span
           class="text-[#db0c26]">Sponsors</span></h2>
-      <p class="text-center text-xl mt-6 mx-2 font-[Barlow Condensed]">Want to be featured here and be a part of this event and help us. Fill
+      <p class="text-center text-xl mt-6 mx-2 font-[Barlow Condensed]">Want to be featured here and be a part of this
+        event and help us. Fill
         the form given form below</p>
     </div>
     <div class="py-8">
@@ -584,10 +630,452 @@
       </a>
     </div>
   </section>
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section m-auto scroll-m-30 px-4">
+    <div class="container mx-auto ">
+      <h2 class="text-8xl font-bold font-[Staatliches] text-center mb-8"> <span class="text-[#db0c26]">FAQs</span></h2>
+      <div class="faq-item font-[Barlow Condensed]">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What is Hack Hiest?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4  text-white rounded">
+          <p>Hack Hiest is a 36-hour hackathon organized by GDG OC MIET, where tech enthusiasts come together to build
+            innovative projects, collaborate, and learn new skills.</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left  text-white rounded">
+          <span>How can I register for Hack Hiest?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 bg-black text-white rounded">
+          <p>To register for the hackathon, simply click the Register button on our website. This will redirect you to
+            the registration form. Fill out the required details, and you’ll be all set to participate in this exciting
+            event!</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Who can attend the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The event is open to anyone interested in technology, including students, professionals, and industry
+            leaders. Whether you're a tech novice or an expert, there's something for everyone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How many members can be in a team ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The minimum team size is 1 and the maximum team size is 4.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Will food be provided for offline hackathon?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, food will be provided for offline hackathon participants.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What are the selecting criteria for idea to be selected?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Unique and innovative ideas with proper structure and workflow.</p>
+        </div>
+      </div>
+
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What about technical events are they completely online?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>No, it is offline hackathon and there are events like codecombat and catch the flag, where hackathon
+            participants can participate in it.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Will internet be provided in offline hackathon ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, Wifi will be provided.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How can I stay updated about the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Follow us on our social media channels (LinkedIn, Twitter, Instagram) for the latest updates and
+            announcements.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Team Section -->
+  <section id="team" class="faq-section my-10 scroll-m-30 px-4">
+    <div class="container mx-auto ">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Staatliches] text-center text-white mb-8">Our <span
+          class="text-[#db0c26]">Team</span></h2>
+    </div>
+    <div class="font-[sans-serif]">
+
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
+        <!-- Harshit Goel -->
+        <div>
+          <img src="src/image/harshit.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Harshit Goel</h4>
+            <p class="text-white text-xs mt-1">Organizer</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/harshitg0el/"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Palak Singhal -->
+        <div>
+          <img src="src/image/palak.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Palak Singhal</h4>
+            <p class="text-white text-xs mt-1">Event Manager</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="http://www.linkedin.com/in/palak-singhal-14a78324a"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Himanshu Kumar -->
+        <div>
+          <img src="src/image/himanshu.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Himanshu Kumar</h4>
+            <p class="text-white text-xs mt-1">ML Head</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/himanshukumard/"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Himanshu1104K"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Vishesh Jindal -->
+        <div>
+          <img src="src/image/Vishesh.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Vishesh Jindal</h4>
+            <p class="text-white text-xs mt-1">Cloud & Web Head</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/vishesh-jindal/"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Vishesh-04"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Tanishq Taliyan -->
+        <div>
+          <img src="src/image/tanishq.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Tanishq Taliyan</h4>
+            <p class="text-white text-xs mt-1">Social Media Head</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/tanishq-taliyan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/tanishqtaliyann"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Kunj Aggarwal -->
+        <div>
+          <img src="src/image/Kunj.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Kunj Agarwal</h4>
+            <p class="text-white text-xs mt-1">Graphic Designer</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/kunj-agarwal"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Kunj2124"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Ashi Verma -->
+        <div>
+          <img src="src/image/ashi.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Ashi Verma</h4>
+            <p class="text-white text-xs mt-1">Web Head</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/ashi-verma-234646215/"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Ashiverma199"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Vani gautam -->
+        <div>
+          <img src="src/image/vani.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Vani Gautam</h4>
+            <p class="text-white text-xs mt-1">Content</p>
+
+            <div class="space-x-4 mt-4">
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Harshit Rana -->
+        <div>
+          <img src="src/image/harshit1.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Harshit Rana</h4>
+            <p class="text-white text-xs mt-1">Graphic Designer</p>
+
+            <div class="space-x-4 mt-4">
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href=""
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Deepanshi Gupta -->
+        <div>
+          <img src="src/image/Deepanshi.jpg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Deepanshi Gupta</h4>
+            <p class="text-white text-xs mt-1">Android Head</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/deepanshi-gupta-11163b26b"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Deepanshi004"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Khyati Malik -->
+        <div>
+          <img src="src/image/khyati.jpeg" class="w-32 h-32 rounded-full inline-block" />
+
+          <div class="py-4">
+            <h4 class="text-white text-base font-bold">Khyati Malik</h4>
+            <p class="text-white text-xs mt-1">Video Editor</p>
+
+            <div class="space-x-4 mt-4">
+              <a href="https://www.linkedin.com/in/khyati-malik-a0085028a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
+                    data-original="#0077b5" />
+                </svg>
+              </a>
+
+              <a href="https://github.com/Khyatimalik22?tab=repositories"
+                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
+                    data-original="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="src/JS/nav.js"></script>
+  <script src="src/JS/faq.js"></script>
   <script src="src/JS/time.js"></script>
   <script src="src/JS/event.js"></script>
 </body>

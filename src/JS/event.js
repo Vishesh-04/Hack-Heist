@@ -2,8 +2,8 @@ const events = [
   {
     title: "Bharat Shiksha Expo Hackathon",
     images: [
-      { src: "/src/image/bharat.JPG", description: "" },
-      // { src: "../image/hero.png", description: "Sponsor's Session" },
+      { src: "/src/image/bharat1.JPG", description: "" },
+      { src: "src/image/bharat2.jpg", description: "Sponsor's Session" },
       // { src: "/images/cocv1/image2.png", description: "Innovative ideas" },
       // {
       //   src: "/images/cocv1/image3.png",
@@ -15,13 +15,13 @@ const events = [
       // },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur, labore animi ratione dicta ex, fugiat non fugit inventore rem iste nihil voluptates optio neque. Consequuntur unde omnis maxime reprehenderit.",
+      "GDG On Campus MIET successfully hosted a 3-day hackathon at the India Expo Centre and Mart.  The event saw enthusiastic participation from students, with an impressive average of over 1500+ registrations.",
   },
   {
     title: "Maadhyam",
     images: [
       {
-        src: "/images/cocv2/image0.jpg",
+        src: "src/image/m1.jpg",
         description: "Exciting start of Clash of Code v2.0!",
       },
       // { src: "/images/cocv2/image1.jpg", description: "Fun Activities" },
@@ -33,22 +33,22 @@ const events = [
       // { src: "/images/cocv2/image4.jpg", description: "Food" },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur, labore animi ratione dicta ex, fugiat non fugit inventore rem iste nihil voluptates optio neque. Consequuntur unde omnis maxime reprehenderit.",
+      "GDG ON CAMPUS MIET hosted a speaker session on May 4, 2024, with ~250+ attendees.  Sponsored by Orkes, SquareBoat, and MIET, the event featured four speakers from Google and BluSmart, covering iOS development, Google Cloud migration, web solutions, and patent research.  Attendees gained valuable tech insights, and the event concluded with swag giveaways.",
   },
   {
     title: "Fetchathon 1.0",
     images: [
-      { src: "/images/cocv3/image0.jpg", description: "Kickoff session" },
-      // { src: "/images/cocv3/image1.jpg", description: "Hackers collaborating" },
-      // {
-      //   src: "/images/cocv3/image2.jpg",
-      //   description: "Pitching innovative ideas",
-      // },
+      { src: "src/image/FETCH1.JPG" },
+      { src: "src/image/FETCH2.jpg" },
+      {
+        src: "src/image/FETCH3.jpg",
+        description: "Pitching innovative ideas",
+      },
       // { src: "/images/cocv3/image3.jpg", description: "Networking & fun" },
       // { src: "/images/cocv3/image4.jpg", description: "Closing ceremony" },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur, labore animi ratione dicta ex, fugiat non fugit inventore rem iste nihil voluptates optio neque. Consequuntur unde omnis maxime reprehenderit.",
+      "GDG On Campus MIET successfully hosted a 3-day hackathon at the India Expo Centre and Mart.  The event saw enthusiastic participation from students, with an impressive average of over 1000+ registrations.",
   },
 ];
 
@@ -83,7 +83,6 @@ function openModal(event) {
       (img) => `
     <div class="flex flex-col items-center">
       <img src="${img.src}" class="w-full h-64 object-cover rounded-lg">
-      <p class="text-gray-300 mt-2 text-center">${img.description}</p>
     </div>
   `
     )
