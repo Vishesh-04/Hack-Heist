@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="://fonts.gstatic.com"https crossorigin>
+  <link rel="preconnect" href="://fonts.gstatic.com" https crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -21,9 +21,9 @@
 <body class="bg-black">
   <!-- Navbar Section -->
   <header
-    class='fixed justify-center flex shadow-lg sm:px-10 size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky border-6 z-50 border-red-600 rounded-4xl'>
+    class='fixed justify-center flex shadow-lg sm:px-10 lg:size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky lg:border-6 z-50 lg:border-red-600 lg:rounded-4xl'>
 
-    <div class='flex flex-wrap items-center justify-evenly'>
+    <div class='flex  items-center gap-80 '>
       <a href="/" class="lg:absolute max-lg:left-10 lg:-translate-x-1/2 lg:-translate-y-1/2 ">
         <img src="src/image/4.png" alt="logo" class='w-36 lg:hidden' />
       </a>
@@ -31,8 +31,7 @@
         <img src="src/image/4.png" alt="logo" class='w-36' />
       </a>
 
-      <div id="collapseMenu"
-        class='max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+      <div id="collapseMenu" class='max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50  lg:justify-evenly sm:justify-between'>
         <button id="toggleClose"
           class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
@@ -46,11 +45,11 @@
         </button>
 
         <ul
-          class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 justify-between'>
-          <li class='mb-6 hidden max-lg:block'>
+          class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <!-- <li class='mb-6 hidden max-lg:block'>
             <a href="javascript:void(0)"><img src="src/image/4.png" alt="logo" class='w-36' />
             </a>
-          </li>
+          </li> -->
           <li class='max-lg:border-b py-4 px-3'><a href='#about'
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>About</a>
           </li>
@@ -117,23 +116,23 @@
   <section id="hero">
     <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
       <div class="lg:w-1/2 lg:h-auto">
-        <img class="h-full w-full object-cover object-fill" src="src/image/hack heist 1.png" alt="Winding mountain road">
+        <img class="h-full w-full object-cover object-fill" src="src/image/hack heist 1.png"
+          alt="Winding mountain road">
       </div>
-      <div
-    </h1>
-  </h1>
-  <h1 class="text-5xl font-extrabold text-white">36-HOURS HACKATHON</h1>
-  <p class="text-xl text-white flex items-center justify-center"> 
-    📅 <span class="text-2xl sm:text-3xl ml-2">29-30th March (Saturday & Sunday)</span>
-  </p>
-  <p class="text-xl text-white flex items-center justify-center">
-    📍 <span class="text-2xl sm:text-3xl ml-2">MIET CAMPUS</span>
-  </p>
-  
-  <p class="text-xl text-white flex items-center justify-center">
-   
-        </div>
+      <div </h1>
+        </h1>
+        <h1 class="text-5xl font-extrabold text-white">36-HOURS HACKATHON</h1>
+        <p class="text-xl text-white flex items-center justify-center">
+          📅 <span class="text-2xl sm:text-3xl ml-2">29-30th March (Saturday & Sunday)</span>
+        </p>
+        <p class="text-xl text-white flex items-center justify-center">
+          📍 <span class="text-2xl sm:text-3xl ml-2">MIET CAMPUS</span>
+        </p>
+
+        <p class="text-xl text-white flex items-center justify-center">
+
       </div>
+    </div>
     </div>
   </section>
   <!-- Time Section -->
@@ -162,37 +161,42 @@
       <h2 class="text-8xl font-bold font-[Bebas Neue] text-center mb-8 uppercase items-center">About <span
           class="text-[#db0c26]">Hack
           Heist</span></h2>
-          <div class="flex items-center justify-center p-2">
-            <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
-  <!-- Image Section -->
-<div class="sm:w-1/2 flex justify-center">
-  <div class="image object-center">
-    <img src="https://s3-alpha-sig.figma.com/img/017a/0148/4d4ea602ada1eab2828ebbb8a432f682?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KJ~JnMOW5knoyMl6Pht8GsSG~Ph1uiBB0B333tGIC3wWM2P5nVY0i9SAkXcR6aMkF4LwUCA91-zw54Y3RJocMZd3Z3Fky2uxS1yfcdXa3ltI0ThxaqvUAh0LZg423AS2Eyv~qx~oCyDO-uIW1AbJSW0ImBmnQKy55~PbHP5fr-OTfSJW2biWMOcH6yMRssmtn67fVub-SNUrjlbg5GtRETlU103YgdNwOxOHf6yVqe9TJCDnp6tyXOVbYT3kqgOi1828F0OZZFvmWuzR1dVWfZfqKaZtkDQoNntqoqkfr3EPR~D21Mzf-DaDJiL2Ei-FJIJN6mRoXwR3pSPtTj0Axw__" 
-      class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-  </div>
-</div>
-<!-- Text Section -->
-<div class="sm:w-1/2 flex items-center justify-start">
-  <div class="text text-white text-lg sm:text-xl md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat]  text-left">
-  
-    <p class="text-lg sm:text-xl md:text-2xl">
-      GDG On Campus MIET presents "Hack Heist".A 36-hour hackathon bringing together tech enthusiasts, developers, and problem-solvers for an intense innovation sprint.
-    </p>
+      <div class="flex items-center justify-center p-2">
+        <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
+          <!-- Image Section -->
+          <div class="sm:w-1/2 flex justify-center">
+            <div class="image object-center">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/017a/0148/4d4ea602ada1eab2828ebbb8a432f682?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KJ~JnMOW5knoyMl6Pht8GsSG~Ph1uiBB0B333tGIC3wWM2P5nVY0i9SAkXcR6aMkF4LwUCA91-zw54Y3RJocMZd3Z3Fky2uxS1yfcdXa3ltI0ThxaqvUAh0LZg423AS2Eyv~qx~oCyDO-uIW1AbJSW0ImBmnQKy55~PbHP5fr-OTfSJW2biWMOcH6yMRssmtn67fVub-SNUrjlbg5GtRETlU103YgdNwOxOHf6yVqe9TJCDnp6tyXOVbYT3kqgOi1828F0OZZFvmWuzR1dVWfZfqKaZtkDQoNntqoqkfr3EPR~D21Mzf-DaDJiL2Ei-FJIJN6mRoXwR3pSPtTj0Axw__"
+                class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+            </div>
+          </div>
+          <!-- Text Section -->
+          <div class="sm:w-1/2 flex items-center justify-start">
+            <div
+              class="text text-white text-lg sm:text-xl md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat]  text-left">
 
-    <p class="mt-6 text-lg sm:text-xl md:text-2xl">
-      More than just a hackathon, Hack Heist is a platform to turn ideas into reality, tackle real-world challenges,  
-      and build impactful solutions.
-    </p>
+              <p class="text-lg sm:text-xl md:text-2xl">
+                GDG On Campus MIET presents "Hack Heist".A 36-hour hackathon bringing together tech enthusiasts,
+                developers, and problem-solvers for an intense innovation sprint.
+              </p>
 
-    <p class="mt-6 text-lg sm:text-xl md:text-2xl">
-      Participants will engage in hands-on development, expert mentorship, and interactive sessions while networking with  
-      like-minded innovators. Whether you're here to learn, compete, or create something groundbreaking,  
-      Hack Heist is your stage to shine.
-    </p>
-  </div>
-</div>
-</div>
-</div>
+              <p class="mt-6 text-lg sm:text-xl md:text-2xl">
+                More than just a hackathon, Hack Heist is a platform to turn ideas into reality, tackle real-world
+                challenges,
+                and build impactful solutions.
+              </p>
+
+              <p class="mt-6 text-lg sm:text-xl md:text-2xl">
+                Participants will engage in hands-on development, expert mentorship, and interactive sessions while
+                networking with
+                like-minded innovators. Whether you're here to learn, compete, or create something groundbreaking,
+                Hack Heist is your stage to shine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   <!-- Past Event Section -->
   <section id="pastevents"
@@ -611,137 +615,149 @@
     </div>
   </section>
   <!-- Sponsor Section -->
-<section id="sponsors"
-  class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
-  <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-    <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
-      Our <span class="text-[#db0c26]">Sponsors</span>
-    </h2>
-    <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
-      Want to be featured here and be a part of this event and help us. Fill the form given below.
-    </p>
-  </div>
-  <div class="py-8">
-    <a href="https://fortune-cowl-835.notion.site/Hack-Heist-16c0d83def6380f59d61d21a29699096" target="_blank"
-      class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
-      Sponsor Us
-    </a>
-  </div>
-</section>
-
-<!-- Community Partners -->
-<section id="community-partners"
-  class="scroll-m-24 relative w-full flex px-4 sm:px-6 lg:px-8 py-8 flex-col items-center justify-center overflow-hidden">
-  <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 lg:px-8 text-white text-center">
-    <h2 class="text-7xl sm:text-8xl md:text-9xl lg:text-12xl font-bold font-[Bebas Neue] uppercase leading-tight">
-      Community <span class="text-[#db0c26]">Partners</span>
-    </h2>
-    <p class="text-2xl sm:text-3xl mt-4 sm:mt-6 mx-2 font-[Montserrat]">To be Announced</p>
-  </div>
-</section>
-<!-- FAQ Items -->
+  <section id="sponsors"
+    class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Sponsors</span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to be featured here and be a part of this event and help us. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8">
+      <a href="https://fortune-cowl-835.notion.site/Hack-Heist-16c0d83def6380f59d61d21a29699096" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        Sponsor Us
+      </a>
+    </div>
+  </section>
+  <!-- Community Partners -->
+  <section id="community-partners"
+    class="scroll-m-24 relative w-full flex px-4 sm:px-6 lg:px-8 py-8 flex-col items-center justify-center overflow-hidden">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 lg:px-8 text-white text-center">
+      <h2 class="text-7xl sm:text-8xl md:text-9xl lg:text-12xl font-bold font-[Bebas Neue] uppercase leading-tight">
+        Community <span class="text-[#db0c26]">Partners</span>
+      </h2>
+      <p class="text-2xl sm:text-3xl mt-4 sm:mt-6 mx-2 font-[Montserrat]">To be Announced</p>
+    </div>
+  </section>
+  <!-- FAQ Items -->
   <section id="faq" class="faq-section m-auto px-4 py-10">
     <div class="container mx-auto max-w-4xl">
-    <h2 class="text-8xl  text-center mb-8 font-[Bebas Neue]">
-      <span class="text-[#db0c26]">FAQs</span>
-       </h2>
-    <div class="space-y-4  font-[Montserrat]">
-    <details class="group border border-gray-700 rounded-lg overflow-hidden">
-      <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-        <span class="font-semibold">What is Hack Heist?</span>
-        <span class="transition-transform group-open:rotate-45">+</span>
-      </summary>
-      <div class="p-4 bg-gray-900 text-gray-300">
-        Hack Heist is a 36-hour hackathon organized by GDG OC MIET.
-      </div>
-    </details>
-  
-    <details class="group border border-gray-700 rounded-lg overflow-hidden">
-      <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-        <span class="font-semibold">How can I register?</span>
-        <span class="transition-transform group-open:rotate-45">+</span>
-      </summary>
-      <div class="p-4 bg-gray-900 text-gray-300">
-        Register through our website before the deadline.
-      </div>
-    </details>
-  
-    <details class="group border border-gray-700 rounded-lg overflow-hidden">
-      <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-        <span class="font-semibold">Who can attend?</span>
-        <span class="transition-transform group-open:rotate-45">+</span>
-      </summary>
-      <div class="p-4 bg-gray-900 text-gray-300">
-        Students, professionals, and tech enthusiasts of all levels.
-      </div>
-    </details>
-    
-    <input type="checkbox" id="show-more" class="hidden peer">
-    <label for="show-more" class="block w-full bg-red-600 text-white text-center p-2 rounded-lg mt-2 cursor-pointer peer-checked:hidden">Show More</label>
-    
-    <div class="hidden peer-checked:block" id="extra-faqs">
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">How many members in a team?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          Minimum 1, maximum 4.
-        </div>
-      </details>
-      
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">Will food be provided?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          Yes, for offline participants.
-        </div>
-      </details>
-      
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">Selection criteria for ideas?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          Unique, innovative, structured ideas.
-        </div>
-      </details>
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">Are technical events online?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          No, it's an offline hackathon with extra events like CodeCombat.
-        </div>
-      </details>
+      <h2 class="text-8xl  text-center mb-8 font-[Bebas Neue]">
+        <span class="text-[#db0c26]">FAQs</span>
+      </h2>
+      <div class="space-y-4  font-[Montserrat]">
+        <details class="group border border-gray-700 rounded-lg overflow-hidden">
+          <summary
+            class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+            <span class="font-semibold">What is Hack Heist?</span>
+            <span class="transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <div class="p-4 bg-gray-900 text-gray-300">
+            Hack Heist is a 36-hour hackathon organized by GDG OC MIET.
+          </div>
+        </details>
 
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">Will internet be provided?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          Yes, WiFi will be available.
-        </div>
-      </details>
+        <details class="group border border-gray-700 rounded-lg overflow-hidden">
+          <summary
+            class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+            <span class="font-semibold">How can I register?</span>
+            <span class="transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <div class="p-4 bg-gray-900 text-gray-300">
+            Register through our website before the deadline.
+          </div>
+        </details>
 
-      <details class="group border border-gray-700 rounded-lg overflow-hidden">
-        <summary class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
-          <span class="font-semibold">How to stay updated?</span>
-          <span class="transition-transform group-open:rotate-45">+</span>
-        </summary>
-        <div class="p-4 bg-gray-900 text-gray-300">
-          Follow us on LinkedIn, Twitter, and Instagram.
-        </div>
-      </details>
+        <details class="group border border-gray-700 rounded-lg overflow-hidden">
+          <summary
+            class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+            <span class="font-semibold">Who can attend?</span>
+            <span class="transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <div class="p-4 bg-gray-900 text-gray-300">
+            Students, professionals, and tech enthusiasts of all levels.
+          </div>
+        </details>
 
-       <label for="show-more" class="block w-full bg-red-600 text-white text-center p-2 rounded-lg mt-2 cursor-pointer">Show Less</label>
-    </div>
-  </div>
+        <input type="checkbox" id="show-more" class="hidden peer">
+        <label for="show-more"
+          class="block w-full bg-red-600 text-white text-center p-2 rounded-lg mt-2 cursor-pointer peer-checked:hidden">Show
+          More</label>
+
+        <div class="hidden peer-checked:block" id="extra-faqs">
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">How many members in a team?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              Minimum 1, maximum 4.
+            </div>
+          </details>
+
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">Will food be provided?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              Yes, for offline participants.
+            </div>
+          </details>
+
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">Selection criteria for ideas?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              Unique, innovative, structured ideas.
+            </div>
+          </details>
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">Are technical events online?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              No, it's an offline hackathon with extra events like CodeCombat.
+            </div>
+          </details>
+
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">Will internet be provided?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              Yes, WiFi will be available.
+            </div>
+          </details>
+
+          <details class="group border border-gray-700 rounded-lg overflow-hidden">
+            <summary
+              class="flex justify-between items-center p-4 w-full text-left text-white bg-gray-800 cursor-pointer group-open:bg-red-600">
+              <span class="font-semibold">How to stay updated?</span>
+              <span class="transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="p-4 bg-gray-900 text-gray-300">
+              Follow us on LinkedIn, Twitter, and Instagram.
+            </div>
+          </details>
+
+          <label for="show-more"
+            class="block w-full bg-red-600 text-white text-center p-2 rounded-lg mt-2 cursor-pointer">Show Less</label>
+        </div>
+      </div>
+  </section>
   <!-- Team Section -->
   <section id="team" class="faq-section my-10 scroll-m-30 px-4">
     <div class="container mx-auto ">
@@ -1075,42 +1091,75 @@
     </div>
   </section>
   <!-- footer section-->
-  <footer style="background:#000;  color:white; padding:50px 20px;">
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:40px;font-bold font-[Montserrat] max-width:1200px; margin:auto;">
-  
-      <!-- Map Section -->
-      <div style="flex:1; min-width:300px; max-width:500px; padding:15px; border-radius:15px; background:#111; box-shadow: 0 4px 10px rgba(255,255,255,0.1);">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13271.100164661737!2d77.63063102960587!3d28.973110362607517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMeerut%20Institute%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sin!4v1738325737617!5m2!1sen!2sin" 
-          style="width:100%; height:400px; border-radius:10px;">
-        </iframe>
-      </div>
-  
-      <!-- Details Section -->
-      <div style="flex:1; min-width:300px; max-width:500px ;padding:30px; border-radius:15px; background:#111; box-shadow: 0 4px 10px rgba(255,255,255,0.1);font-family: 'Montserrat', sans-serif;  text-align:center;">
-        <h1 style="font-size:26px; font-weight:bold; text-transform:uppercase; color:white;">Google Developer Student Clubs</h1>
-  
-        <p style="font-size:18px; margin:12px 0;">📧 Email: <a href="mailto:gdgoncampus@miet.ac.in" style="color:white; text-decoration:none;">gdgoncampus@miet.ac.in</a></p>
-        <p style="font-size:18px; margin:8px 0;">📞 Harshit Goel: <a href="tel:+91 9368544008" style="color:white; text-decoration:none;">+91 9368544008</a></p>
-        <p style="font-size:18px; margin:8px 0;">📞 Palak Singhal: <a href="tel:+91 8630345836" style="color:white; text-decoration:none;">+91 8630345836</a></p>
-        <p style="font-size:18px; margin:8px 0;">📞 Himanshu Kumar: <a href="tel:+91 7248158511" style="color:white; text-decoration:none;">+91 7248158511</a></p>
-        <p style="font-size:18px; margin:8px 0;">📞 Vishesh Jindal: <a href="tel:+91 8630345836" style="color:white; text-decoration:none;">+91 8630345836</a></p>
-  
-        <!-- Social Links -->
-        <div style="display:flex; justify-content:center; gap:15px; margin-top:15px;">
-          <a href="https://www.linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/" target="_blank" style="font-size:26px; color:white;"><i class="bx bxl-linkedin"></i></a>
-          <a href="mailto:gdgoncampus@miet.ac.in" target="_blank" style="font-size:26px; color:white;"><i class="bx bxl-gmail"></i></a>
-          <a href="https://www.instagram.com/gdg_miet/" target="_blank" style="font-size:26px; color:white;"><i class="bx bxl-instagram"></i></a>
+  <footer class="py-12 px-6 text-gray-700">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 grid-cols-2 gap-10">
+      <!-- Branding -->
+      <div>
+        <div class="font-bold h-7 mt-8 text-purple-600 flex items-center gap-2">
+          <img src="src/image/footer.png" alt="">
+        </div>
+        <p class="mt-4 pl-3 text-sm font-[Bebas Neue] leading-relaxed">
+          A 36-HOURS HACKATHON
+        </p>
+        <div class="flex gap-4 mt-5 pl-4 text-lg">
+          <a href="https://gdg.community.dev/gdg-on-campus-meerut-institute-of-engineering-and-technology-meerut-india/" class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fa-solid fa-link"></i></a>
+          <a href="https://www.instagram.com/gdg_miet/" class="text-gray-500 hover:text-red-600 transition duration-300"><i
+              class="fab fa-instagram"></i></a>
+          <a href="http://linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/" class="text-gray-500 hover:text-red-600 transition duration-300"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://www.commudle.com/communities/gdsc-miet" class="text-gray-500 hover:text-red-600 transition duration-300"><img src="src/image/commudle-logo192.png" class="w-6 text-gray-500"></a>
         </div>
       </div>
   
+      <!-- Get In Touch -->
+      <div class="font-[Bebas Neue]">
+        <h3 class="text-xl font-semibold">Get In Touch</h3>
+        <p class="text-sm mt-3 hover:text-red-600 transition">
+          <a href="mailto:gdgoncampus@miet.ac.in">gdgoncampus@miet.ac.in</a>
+        </p>
+        <p class="text-sm mt-2 hover:text-red-600 transition"> <a href="tel:+91 8630345836">+91 86303 45836</a></p>
+        <p class="text-sm mt-2 hover:text-red-600 transition">N.H. 58, Delhi-Roorkee Highway, Baghpat Bypass Road Crossing, Meerut, Uttar Pradesh 250005</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class=" pl-4">
+        <h3 class="text-xlfont-semibold font-[Bebas Neue]">Quick Links</h3>
+        <div class="flex justify-start mt-3">
+          <ul class="space-y-2 text-sm pr-2">
+            <li><a href="#hero" class="hover:text-red-600 transition">Home</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">About</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">Past Events</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">Schedule</a></li>
+          </ul>
+          <ul class="space-y-2 text-sm pl-2">
+            <li><a href="#" class="hover:text-red-600 transition">Prizes</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">Sponsors</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">FAQs</a></li>
+            <li><a href="#" class="hover:text-red-600 transition">Our Team</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Newsletter -->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13271.100164661737!2d77.63063102960587!3d28.973110362607517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMeerut%20Institute%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sin!4v1738325737617!5m2!1sen!2sin"
+          class="w-full h-full border-4 border-red-700 rounded-2xl">
+        </iframe>
+      </div>
+    </div>
+  
+    <div class="text-center text-sm text-gray-500 mt-12 pt-5">
+      Copyright &copy; 2025 All Rights Reserved GDG OC MIET.
     </div>
   </footer>
+
   
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/8fc9dc97d5.js" crossorigin="anonymous"></script>
+
   <!-- Include Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  
-  
-  
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
