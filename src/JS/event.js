@@ -3,7 +3,7 @@ const events = [
     title: "Bharat Shiksha Expo Hackathon",
     images: [
       { src: "/src/image/bharat1.jpg", description: "" },
-      { src: "src/image/bharat2.jpg", description: "Sponsor's Session" },
+      { src: "src/image/bharat2.jpg", description: "Judging Session" },
       // { src: "/images/cocv1/image2.png", description: "Innovative ideas" },
       // {
       //   src: "/images/cocv1/image3.png",
@@ -22,13 +22,13 @@ const events = [
     images: [
       {
         src: "src/image/m1.jpg",
-        description: "Exciting start of Clash of Code v2.0!",
+        description: "Exciting start of Maadhyam!",
       },
-      // { src: "/images/cocv2/image1.jpg", description: "Fun Activities" },
-      // {
-      //   src: "/images/cocv2/image2.jpg",
-      //   description: "Problem and innovative solution",
-      // },
+      { src: "src/image/m2.jpg", description: "Swag Delivery" },
+      {
+        src: "src/image/m3.jpg",
+        description: "Team Picture",
+      },
       // { src: "/images/cocv2/image3.jpg", description: "Swags for all!" },
       // { src: "/images/cocv2/image4.jpg", description: "Food" },
     ],
