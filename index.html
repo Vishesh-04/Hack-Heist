@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hack Heist | Premier Hackathon in MIET, Meerut & Delhi NCR</title>
-  <meta name="description" content="Join Hack Heist, the leading hackathon event in MIET, Meerut, and Delhi NCR. Showcase your skills, innovate, and connect with tech enthusiasts at this premier tech event.">
-  <meta name="keywords" content="hackathon, Hack Heist, hackathon in MIET, hackathon in Meerut, hackathon in Delhi NCR, tech event, innovation, coding competition">
+  <meta name="description"
+    content="Join Hack Heist, the leading hackathon event in MIET, Meerut, and Delhi NCR. Showcase your skills, innovate, and connect with tech enthusiasts at this premier tech event.">
+  <meta name="keywords"
+    content="hackathon, Hack Heist, hackathon in MIET, hackathon in Meerut, hackathon in Delhi NCR, tech event, innovation, coding competition">
   <link rel="icon" type="image/png" sizes="16x16" href="src/image/fav-removebg-preview.png">
   <link href="src/input.css" rel="stylesheet">
   <link rel="stylesheet" href="src/output.css">
@@ -15,17 +18,20 @@
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="://fonts.gstatic.com" https crossorigin>  
+  <link rel="preconnect" href="://fonts.gstatic.com" https crossorigin>
+  <link href="https://db.onlinewebfonts.com/c/61d512c3f7f8d9cc4b4eb326d833f80c?family=Agrandir+Tight+Bold"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-black">
+<body class=" bg-cover bg-center bg-no-repeat"
+  style="background-image: url(src/image/Background\ Image\ for\ hackHeist.png); background-size: cover; background-position: center center;">
   <!-- Navbar Section -->
   <header
     class='fixed justify-center flex shadow-lg sm:px-10 lg:size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky lg:border-6 z-50 lg:border-red-600 lg:rounded-4xl'>
 
-    <div class='flex  items-center gap-80 '>
+    <div class='flex items-center lg:gap-80 gap-40'>
       <a href="/" class="lg:absolute max-lg:left-10 lg:-translate-x-1/2 lg:-translate-y-1/2 ">
         <img src="src/image/4.png" alt="logo" class='w-36 lg:hidden' />
       </a>
@@ -33,7 +39,8 @@
         <img src="src/image/4.png" alt="logo" class='w-36' />
       </a>
 
-      <div id="collapseMenu" class='max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50  lg:justify-evenly sm:justify-between'>
+      <div id="collapseMenu"
+        class='max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50  lg:justify-evenly sm:justify-between'>
         <button id="toggleClose"
           class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
           <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
@@ -48,10 +55,10 @@
 
         <ul
           class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-          <!-- <li class='mb-6 hidden max-lg:block'>
+          <li class='mb-6 hidden max-lg:block'>
             <a href="javascript:void(0)"><img src="src/image/4.png" alt="logo" class='w-36' />
             </a>
-          </li> -->
+          </li>
           <li class='max-lg:border-b py-4 px-3'><a href='#about'
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>About</a>
           </li>
@@ -62,14 +69,14 @@
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>Schedule</a>
           </li>
           <li class='max-lg:border-b py-4 px-3'><a href='#prize'
-              class='hover:text-red-500 text-white block font-semibold text-[15px]'>The Loot</a>
+              class='hover:text-red-500 text-white block font-semibold text-[15px]'>Loot</a>
           </li>
           <li class=' hidden lg:block'>
             <a href="#hero"><img src="src/image/4.png" alt="logo" class='w-36' />
             </a>
           </li>
-          <li class='max-lg:border-b py-4 px-3'><a href='#sponsors'
-              class='hover:text-red-500 text-white block font-semibold text-[15px]'>Sponsors</a>
+          <li class='max-lg:border-b py-4 px-3'><a href='#partners'
+              class='hover:text-red-500 text-white block font-semibold text-[15px]'>Partners</a>
           </li>
           <li class='max-lg:border-b py-4 px-3'><a href='#faq'
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>FAQs</a>
@@ -115,48 +122,45 @@
     </div>
   </header>
   <!-- Hero Section -->
-  <section id="hero">
-    <div class="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
+  <section id="hero" class="inset-0 flex justify-center items-center h-screen ">
+    <div class="absolute flex flex-col items-center text-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
       <div class="lg:w-1/2 lg:h-auto">
-        <img class="h-full w-full object-cover object-fill" src="src/image/hack heist 1.png"
+        <img class="h-full w-full object-cover object-fill scale-125" src="src/image/hero1.png"
           alt="Winding mountain road">
       </div>
-      <div </h1>
-        </h1>
-        <h1 class="text-5xl font-extrabold text-white">36-HOURS HACKATHON</h1>
+      <div>
+        <h1 class="text-3xl font-extrabold font-[Montserrat] text-white my-2">36-HOURS HACKATHON</h1>
         <p class="text-xl text-white flex items-center justify-center">
-          📅 <span class="text-2xl sm:text-3xl ml-2">29-30th March (Saturday & Sunday)</span>
+          📅 <span class="text-3xl font-bold sm:text-3xl ml-2 font-[Montserrat]">29-30th March (Saturday &
+            Sunday)</span>
         </p>
-        <p class="text-xl text-white flex items-center justify-center">
-          📍 <span class="text-2xl sm:text-3xl ml-2">MIET CAMPUS</span>
+        <p class="text-xl text-white flex items-center justify-center my-2 mb-4">
+          📍 <span class="text-2xl font-bold sm:text-3xl ml-2 font-[Montserrat]">MIET CAMPUS</span>
         </p>
-
-        <p class="text-xl text-white flex items-center justify-center">
-
+        <section id="about-section" class="about-section">
+          <div class="highlights font-[Montserrat]">
+            <div class="cont">
+              <ul class="countdown">
+                <li><span class="m-auto" id="days"></span>
+                  Days</li>
+                <li><span class="m-auto" id="hours"></span>Hours</li>
+                <li><span class="m-auto" id="minutes"></span>Minutes</li>
+                <li><span class="m-auto" id="seconds"></span>Second</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <a href=""
+          class="items-center justify-center mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-[Montserrat] font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+          Join the Heist
+        </a>
       </div>
     </div>
-    </div>
   </section>
+
+
   <!-- Time Section -->
-  <section id="about-section" class="section about-section">
-    <div class="py-8">
-      <a href=""
-        class="items-center justify-center mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-[Bebas Neue] font-bold uppercase rounded-lg shadow-md transition-all duration-300">
-        Join the Heist
-      </a>
-    </div>
-    <div class="highlights font-[Bebas Neue]">
-      <div class="cont">
-        <ul class="countdown">
-          <li><span class="m-auto" id="days"></span>
-            Days</li>
-          <li><span class="m-auto" id="hours"></span>Hours</li>
-          <li><span class="m-auto" id="minutes"></span>Minutes</li>
-          <li><span class="m-auto" id="seconds"></span>Second</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  
   <!-- About Section -->
   <section id="about" class="scroll-m-20 ">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white items-center justify-center">
@@ -167,16 +171,15 @@
         <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
           <!-- Image Section -->
           <div class="sm:w-1/2 flex justify-center">
-            <div class="image object-center">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/017a/0148/4d4ea602ada1eab2828ebbb8a432f682?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KJ~JnMOW5knoyMl6Pht8GsSG~Ph1uiBB0B333tGIC3wWM2P5nVY0i9SAkXcR6aMkF4LwUCA91-zw54Y3RJocMZd3Z3Fky2uxS1yfcdXa3ltI0ThxaqvUAh0LZg423AS2Eyv~qx~oCyDO-uIW1AbJSW0ImBmnQKy55~PbHP5fr-OTfSJW2biWMOcH6yMRssmtn67fVub-SNUrjlbg5GtRETlU103YgdNwOxOHf6yVqe9TJCDnp6tyXOVbYT3kqgOi1828F0OZZFvmWuzR1dVWfZfqKaZtkDQoNntqoqkfr3EPR~D21Mzf-DaDJiL2Ei-FJIJN6mRoXwR3pSPtTj0Axw__"
-                class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+            <div class="image object-center border-4 border-red-600 rounded-2xl">
+              <img src="src/image/about.png"
+                class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded-2xl">
             </div>
           </div>
           <!-- Text Section -->
           <div class="sm:w-1/2 flex items-center justify-start">
             <div
-              class="text text-white text-lg sm:text-xl md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat]  text-left">
+              class="text text-white text-lg sm:text-xl md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat] text-left">
 
               <p class="text-lg sm:text-xl md:text-2xl">
                 GDG On Campus MIET presents <span class="font-bold">Hack Heist.</span><br>
@@ -185,9 +188,10 @@
               </p>
 
               <p class="mt-6 text-lg sm:text-xl md:text-2xl">
-                Assemble your crew, strategize like a mastermind, and execute your vision with expert mentorship and hands-on
+                Assemble your crew, strategize like a mastermind, and execute your vision with expert mentorship and
+                hands-on
                 innovation. Whether you're here to code, compete, or create, this is your ultimate heist.
-                
+
               </p>
 
               <p class="mt-6 text-lg sm:text-xl md:text-2xl">
@@ -607,16 +611,94 @@
   </section> -->
   <!-- Prize Section -->
   <section id="prize"
-    class="scroll-m-24 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
+    class="scroll-m-54 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
-      <h2 class="text-8xl  font-bold font-[Bebas Neue] text-center mb-8 uppercase">The <span
-          class="text-[#db0c26]">Loot</span></h2>
-      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">To be Announced</p>
+      <h2 class="text-8xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        The <span class="text-[#db0c26]">Loot</span>
+      </h2>
+      <div class="flex flex-row items-center justify-center relative">
+        <h1 class="font-[Montserrat] bottom-5 text-2xl sm:text-3xl lg:text-5xl 2xl:text-6xl text-center font-bold">
+          ₹?,???,???<br>Prize Pool
+        </h1>
+      </div>
+      <div class="flex flex-col items-center justify-center w-full px-8 mt-8 text-white">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-6xl max-h-6xl">
+
+          <!-- Winner -->
+          <div
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-yellow-500 text-yellow-400 text-xl font-[Montserrat] p-6">
+            <span
+              class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-bl-md">Grand
+              Prize</span>
+            <h3 class="font-bold text-lg mt-2">The Vault</h3>
+            <p class="text-3xl font-bold">₹??,??? cash +</p>
+            <p class="text-xl">The Heist Survival Kit</p>
+          </div>
+          <!-- 1st Runner-up -->
+          <div
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-gray-400 text-gray-300 text-xl font-[Montserrat] p-6">
+            <span class="absolute top-0 right-0 bg-gray-400 text-black text-xs font-bold px-2 py-1 rounded-bl-md">
+              Runner-up</span>
+            <h3 class="font-bold text-lg mt-2">The Heist Crew’s Cut</h3>
+            <p class="text-3xl font-bold">₹??,??? cash +</p>
+            <p class="text-xl">The Heist Survival Kit</p>
+          </div>
+          <!-- 2nd Runner-up -->
+          <div
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-orange-400 text-orange-300 text-xl font-[Montserrat] p-6">
+            <span
+              class="absolute top-0 right-0 bg-orange-400 text-black text-xs font-bold px-2 py-1 rounded-bl-md">Third
+              Place</span>
+            <h3 class="font-bold text-lg mt-2">The Getaway Stash</h3>
+            <p class="text-3xl font-bold">₹??,??? cash +</p>
+            <p class="text-xl">The Heist Survival Kit</p>
+          </div>
+        </div>
+        <!-- Participant Bounty -->
+        <div class="w-full max-w-5xl mt-8">
+          <div
+            class="prize w-full relative rounded-xl bg-[#0A0E19] border border-blue-500 flex flex-col items-center justify-center text-xl font-[Montserrat] p-6">
+            <span class="absolute top-0 right-0 bg-blue-500 text-black text-xs font-bold px-2 py-1 rounded-bl-md">
+              The Dali Pack</span>
+            <h3 class="text-2xl font-bold text-blue-400">Exclusive The Loot Crate for All!</h3>
+            <p class="text-lg text-white">Get ready to receive some awesome goodies with your participation!</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+
   <!-- Sponsor Section -->
-  <section id="sponsors"
+  <section id="partners"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Partners</span>
+      </h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-6">
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        onclick="showSection('sponsors')">Sponsors</button>
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        onclick="showSection('judges')">Judges</button>
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        onclick="showSection('mentors')">Mentors</button>
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        onclick="showSection('community')">Community</button>
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        onclick="showSection('media')">Media Partner</button>
+    </div>
+
+  </section>
+
+  <div id="sponsors" class="section relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">Sponsors</span>
@@ -631,9 +713,74 @@
         Sponsor Us
       </a>
     </div>
-  </section>
+  </div>
+  <div id="judges" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Judges</span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to become a Judge. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8">
+      <a href="" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        Call for Judges
+      </a>
+    </div>
+  </div>
+  <div id="mentors" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Mentors</span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to become a Mentor. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8">
+      <a href="" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        Call for Mentors
+      </a>
+    </div>
+  </div>
+  <div id="community" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Community </span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to be featured here as a Community Partner. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8">
+      <a href="" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        Call for Community Partner
+      </a>
+    </div>
+  </div>
+  <div id="media" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">Media Partners</span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to be featured here and be a part of this event and help us. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8">
+      <a href="" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        Join our Media Partners
+      </a>
+    </div>
+  </div>
+  </div>
   <!-- Community Partners -->
-  <section id="community-partners"
+  <!-- <section id="community-partners"
     class="scroll-m-30 relative w-full flex px-4 sm:px-6 lg:px-8 py-8 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 lg:px-8 text-white text-center">
       <h2 class="text-7xl sm:text-8xl md:text-9xl lg:text-12xl font-bold font-[Bebas Neue] uppercase leading-tight">
@@ -641,7 +788,7 @@
       </h2>
       <p class="text-2xl sm:text-3xl mt-4 sm:mt-6 mx-2 font-[Montserrat]">To be Announced</p>
     </div>
-  </section>
+  </section> -->
   <!-- FAQ Items -->
   <section id="faq" class="faq-section m-auto px-4 py-10 scroll-m-30">
     <div class="container mx-auto max-w-4xl">
@@ -767,10 +914,10 @@
     <div class="font-[sans-serif]">
 
       <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
         <!-- Harshit Goel -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/harshit.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/harshit.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Harshit Goel</h4>
@@ -799,7 +946,7 @@
         </div>
         <!-- Palak Singhal -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/palak.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/palak.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Palak Singhal</h4>
@@ -828,7 +975,7 @@
         </div>
         <!-- Himanshu Kumar -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/himanshu.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/himanshu.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Himanshu Kumar</h4>
@@ -857,7 +1004,7 @@
         </div>
         <!-- Vishesh Jindal -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/Vishesh.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/Vishesh.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Vishesh Jindal</h4>
@@ -886,7 +1033,7 @@
         </div>
         <!-- Tanishq Taliyan -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/tanishq.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/tanishq.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Tanishq Taliyan</h4>
@@ -915,7 +1062,7 @@
         </div>
         <!-- Kunj Aggarwal -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/Kunj.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/Kunj.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Kunj Agarwal</h4>
@@ -944,7 +1091,7 @@
         </div>
         <!-- Ashi Verma -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/ashi.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/ashi.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Ashi Verma</h4>
@@ -973,7 +1120,7 @@
         </div>
         <!-- Vani gautam -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/vani.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/vani.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Vani Gautam</h4>
@@ -1000,38 +1147,9 @@
             </div>
           </div>
         </div>
-        <!-- Harshit Rana -->
-        <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/harshit1.jpg" class="w-32 h-32 rounded-full inline-block" />
-
-          <div class="py-4">
-            <h4 class="text-white text-base font-bold">Harshit Rana</h4>
-            <p class="text-white text-xs mt-1">Graphic Designer</p>
-
-            <div class="space-x-4 mt-4">
-              <a href=""
-                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="#333" viewBox="0 0 24 24">
-                  <path
-                    d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0z"
-                    data-original="#0077b5" />
-                </svg>
-              </a>
-
-              <a href=""
-                class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.175c-3.338.724-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.839 1.236 1.839 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.304.763-1.604-2.665-.304-5.466-1.332-5.466-5.93 0-1.312.469-2.385 1.236-3.222-.124-.304-.536-1.527.117-3.184 0 0 1.007-.322 3.3 1.23a11.44 11.44 0 0 1 3-.404c1.018.005 2.043.138 3 .404 2.292-1.552 3.297-1.23 3.297-1.23.655 1.657.243 2.88.12 3.184.771.837 1.233 1.91 1.233 3.222 0 4.612-2.805 5.622-5.478 5.92.432.372.815 1.103.815 2.222v3.293c0 .32.192.694.8.576C20.566 21.796 24 17.303 24 12c0-6.627-5.373-12-12-12z"
-                    data-original="#000000" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
         <!-- Deepanshi Gupta -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/Deepanshi.jpg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/Deepanshi.jpg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Deepanshi Gupta</h4>
@@ -1060,7 +1178,7 @@
         </div>
         <!-- Khyati Malik -->
         <div class="hover:scale-115 transition-all duration-1000">
-          <img src="src/image/khyati.jpeg" class="w-32 h-32 rounded-full inline-block" />
+          <img src="src/image/Team/khyati.jpeg" class="w-32 h-32 rounded-full inline-block" />
 
           <div class="py-4">
             <h4 class="text-white text-base font-bold">Khyati Malik</h4>
@@ -1098,38 +1216,44 @@
         <div class="font-bold h-7 mt-8 text-purple-600 flex items-center gap-2">
           <img src="src/image/footer.png" alt="">
         </div>
-        <p class="mt-4 text-sm font-[Bebas Neue] leading-relaxed">
+        <p class="mt-6 text-sm font-[Montserrat] leading-relaxed">
           A 36-HOURS HACKATHON
         </p>
         <div class="flex gap-4 mt-5 text-lg">
-          <a href="https://gdg.community.dev/gdg-on-campus-meerut-institute-of-engineering-and-technology-meerut-india/" class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fa-solid fa-link"></i></a>
-          <a href="https://www.instagram.com/gdg_miet/" class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fab fa-instagram"></i></a>
-          <a href="http://linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/" class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.commudle.com/communities/gdsc-miet" class="text-gray-500 hover:red-600 transition duration-300"><img src="src/image/commudle-logo192.png" class="w-6 text-gray-500"></a>
+          <a href="https://gdg.community.dev/gdg-on-campus-meerut-institute-of-engineering-and-technology-meerut-india/"
+            class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fa-solid fa-link"></i></a>
+          <a href="https://www.instagram.com/gdg_miet/"
+            class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fab fa-instagram"></i></a>
+          <a href="http://linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/"
+            class="text-gray-500 hover:text-red-600 transition duration-300"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.commudle.com/communities/gdsc-miet"
+            class="text-gray-500 hover:red-600 transition duration-300"><img src="src/image/commudle-logo192.png"
+              class="w-6 text-gray-500"></a>
         </div>
       </div>
-  
+
       <!-- Get In Touch -->
-      <div class="font-[Bebas Neue]">
+      <div class="font-[Montserrat]">
         <h3 class="text-xl font-semibold">Get In Touch</h3>
         <p class="text-sm mt-3 hover:text-red-600 transition">
           <a href="mailto:gdgoncampus@miet.ac.in">gdgoncampus@miet.ac.in</a>
         </p>
         <p class="text-sm mt-2 hover:text-red-600 transition"> <a href="tel:+91 8630345836">+91 86303 45836</a></p>
-        <p class="text-sm mt-2 hover:text-red-600 transition">N.H. 58, Delhi-Roorkee Highway, Baghpat Bypass Road Crossing, Meerut, Uttar Pradesh 250005</p>
+        <p class="text-sm mt-2 hover:text-red-600 transition">N.H. 58, Delhi-Roorkee Highway, Baghpat Bypass Road
+          Crossing, Meerut, Uttar Pradesh 250005</p>
       </div>
-  
+
       <!-- Quick Links -->
       <div class=" pl-4">
-        <h3 class="text-xlfont-semibold font-[Bebas Neue]">Quick Links</h3>
+        <h3 class="text-xlfont-semibold font-[Montserrat]">Quick Links</h3>
         <div class="flex justify-start mt-3">
-          <ul class="space-y-2 text-sm pr-2">
+          <ul class="space-y-2 text-sm pr-2 font-[Montserrat]">
             <li><a href="#hero" class="hover:text-red-600 transition">Home</a></li>
             <li><a href="#" class="hover:text-red-600 transition">About</a></li>
             <li><a href="#" class="hover:text-red-600 transition">Past Events</a></li>
             <li><a href="#" class="hover:text-red-600 transition">Schedule</a></li>
           </ul>
-          <ul class="space-y-2 text-sm pl-2">
+          <ul class="space-y-2 text-sm pl-2 font-[Montserrat]">
             <li><a href="#" class="hover:text-red-600 transition">Prizes</a></li>
             <li><a href="#" class="hover:text-red-600 transition">Sponsors</a></li>
             <li><a href="#" class="hover:text-red-600 transition">FAQs</a></li>
@@ -1137,7 +1261,7 @@
           </ul>
         </div>
       </div>
-  
+
       <!-- Newsletter -->
       <div>
         <iframe
@@ -1146,13 +1270,12 @@
         </iframe>
       </div>
     </div>
-  
-    <div class="text-center text-sm text-white mt-12 pt-5">
+
+    <div class="text-center text-sm text-white mt-12 pt-5 font-[Montserrat]">
       Copyright &copy; 2025 All Rights Reserved GDG OC MIET.
     </div>
   </footer>
 
-  
   <!-- FontAwesome for Icons -->
   <script src="https://kit.fontawesome.com/8fc9dc97d5.js" crossorigin="anonymous"></script>
 
@@ -1166,6 +1289,7 @@
   <script src="src/JS/nav.js"></script>
   <script src="src/JS/faq.js"></script>
   <script src="src/JS/time.js"></script>
+  <script src="src/JS/partner.js"></script>
   <script src="src/JS/event.js"></script>
 </body>
 

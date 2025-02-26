@@ -316,3 +316,8 @@ ul.slicknav_nav {
     font-size: 1.5rem;
   }
 }
+
+
+.prize{
+  background: linear-gradient(to bottom right, #db0c26, #420608);
+}
