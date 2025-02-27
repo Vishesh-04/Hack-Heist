@@ -130,25 +130,28 @@
       </div>
       <div>
         <h1 class="text-3xl font-extrabold font-[Montserrat] text-white my-2 mt-10">36-HOURS HACKATHON</h1>
-        <p class="text-white flex items-center justify-center text-3xl font-bold font-[Montserrat]">29th - 30th March, 2025</span>
+        <p class="text-white flex items-center justify-center text-3xl font-bold font-[Montserrat]">29th - 30th March,
+          2025</span>
         </p>
         <section id="about-section" class="about-section">
           <div class="highlights font-[Montserrat]">
             <div class="cont">
               <ul class="countdown">
-                <li><span class="m-auto" id="days"></span>
+                <li><span class="m-auto animate-pulse" id="days"></span>
                   Days</li>
-                <li><span class="m-auto" id="hours"></span>Hours</li>
-                <li><span class="m-auto" id="minutes"></span>Minutes</li>
-                <li><span class="m-auto" id="seconds"></span>Second</li>
+                <li><span class="m-auto animate-pulse" id="hours"></span>Hours</li>
+                <li><span class="m-auto animate-pulse" id="minutes"></span>Minutes</li>
+                <li><span class="m-auto animate-pulse" id="seconds"></span>Second</li>
               </ul>
             </div>
           </div>
         </section>
-        <a href=""
-          class="items-center justify-center mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-[Montserrat] font-bold uppercase rounded-lg shadow-md transition-all duration-300">
-          Join the Heist
-        </a>
+        <div class="hover:scale-110 transition-all duration-1000">
+          <a href=""
+            class="items-center justify-center mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-[Montserrat] font-bold uppercase rounded-lg shadow-md ">
+            Join the Heist
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -161,7 +164,7 @@
       <div class="flex items-center justify-center p-2">
         <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
           <!-- Image Section -->
-          <div class="sm:w-1/2 flex items-center justify-center pt-20 pb-20">
+          <div class="sm:w-1/2 flex items-center justify-center pt-20 pb-20 ">
             <div class="image object-center border-4 border-red-600 rounded-2xl">
               <img src="src/image/about.png"
                 class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 ">
@@ -172,16 +175,19 @@
             <div
               class=" text-white text-lg sm:text-xl text-justify  md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat]">
               <p class="text-lg sm:text-xl md:text-2xl">
-                GDG On Campus MIET presents <span class="font-bold">Hack Heist </span>– a thrilling 36-hour hackathon where tech enthusiasts, developers, and
+                GDG On Campus MIET presents <span class="font-bold">Hack Heist </span>– a thrilling 36-hour hackathon
+                where tech enthusiasts, developers, and
                 problem-solvers come together to innovate, collaborate, and build impactful solutions.
               </p>
               <p class="mt-6 text-lg sm:text-xl md:text-2xl">
-                
+
               </p>
 
               <p class="mt-6 text-lg sm:text-xl md:text-2xl">
-                More than just a competition, Hack Heist is your platform to tackle real-world challenges, refine your skills, and
-                network with like-minded innovators. With expert mentorship, interactive sessions, and hands-on development, this is
+                More than just a competition, Hack Heist is your platform to tackle real-world challenges, refine your
+                skills, and
+                network with like-minded innovators. With expert mentorship, interactive sessions, and hands-on
+                development, this is
                 your chance to shine!
               </p>
 
@@ -197,13 +203,14 @@
       </div>
   </section>
   <!-- Past Event Section -->
-  <section id="pastevents" 
+  <section id="pastevents"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold text-center mb-8 uppercase font-[Bebas Neue]">Our Past <span
           class="text-[#db0c26]">Heists</span></h2>
 
-      <div id="events-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+      <div data-aos="zoom-out-up" data-aos-duration="3000" id="events-container"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"></div>
 
       <div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-80 p-4">
         <div class="bg-gray-900 p-6 rounded-lg max-w-3xl w-full relative overflow-y-auto max-h-[90vh]">
@@ -615,14 +622,15 @@
           ₹?,???,???<br>Prize Pool
         </h1>
       </div>
-      <div class="flex flex-col items-center justify-center w-full px-8 mt-8 text-white">
+      <div class="flex flex-col items-center justify-center w-full px-8 mt-8 text-white" data-aos="flip-up"
+        data-aos-duration="3000">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-6xl max-h-6xl">
 
           <!-- Winner -->
           <div
-            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-yellow-500 text-yellow-400 text-xl font-[Montserrat] p-6">
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-yellow-500 text-yellow-400 text-xl font-[Montserrat] p-6 hover:scale-110 duration-1000">
             <span
-              class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-bl-md">Grand
+              class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-bl-xl rounded-tr-xl">Grand
               Prize</span>
             <h3 class="font-bold text-lg mt-2">The Vault</h3>
             <p class="text-3xl font-bold">₹??,??? cash +</p>
@@ -630,8 +638,9 @@
           </div>
           <!-- 1st Runner-up -->
           <div
-            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-gray-400 text-gray-300 text-xl font-[Montserrat] p-6">
-            <span class="absolute top-0 right-0 bg-gray-400 text-black text-xs font-bold px-2 py-1 rounded-bl-md">
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-gray-400 text-gray-300 text-xl font-[Montserrat] p-6 hover:scale-110 transition-all duration-1000">
+            <span
+              class="absolute top-0 right-0 bg-gray-400 text-black text-xs font-bold px-2 py-1 rounded-bl-xl rounded-tr-xl">
               Runner-up</span>
             <h3 class="font-bold text-lg mt-2">The Heist Crew’s Cut</h3>
             <p class="text-3xl font-bold">₹??,??? cash +</p>
@@ -639,9 +648,9 @@
           </div>
           <!-- 2nd Runner-up -->
           <div
-            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-orange-400 text-orange-300 text-xl font-[Montserrat] p-6">
+            class="prize w-full relative rounded-xl flex flex-col items-center justify-center bg-[#0A0E19] border border-orange-400 text-orange-300 text-xl font-[Montserrat] p-6 hover:scale-110 transition-all duration-1000">
             <span
-              class="absolute top-0 right-0 bg-orange-400 text-black text-xs font-bold px-2 py-1 rounded-bl-md">Third
+              class="absolute top-0 right-0 bg-orange-400 text-black text-xs font-bold px-2 py-1 rounded-bl-xl rounded-tr-xl">Third
               Place</span>
             <h3 class="font-bold text-lg mt-2">The Getaway Stash</h3>
             <p class="text-3xl font-bold">₹??,??? cash +</p>
@@ -649,10 +658,11 @@
           </div>
         </div>
         <!-- Participant Bounty -->
-        <div class="w-full max-w-5xl mt-8">
+        <div class="w-full max-w-5xl mt-8 hover:scale-110 transition-all duration-1000">
           <div
             class="prize w-full relative rounded-xl bg-[#0A0E19] border border-blue-500 flex flex-col items-center justify-center text-xl font-[Montserrat] p-6">
-            <span class="absolute top-0 right-0 bg-blue-500 text-black text-xs font-bold px-2 py-1 rounded-bl-md">
+            <span
+              class="absolute top-0 right-0 bg-blue-500 text-black text-xs font-bold px-2 py-1 rounded-bl-xl rounded-tr-xl">
               The Dali Pack</span>
             <h3 class="text-2xl font-bold text-blue-400">Exclusive The Loot Crate for All!</h3>
             <p class="text-lg text-white">Get ready to receive some awesome goodies with your participation!</p>
@@ -661,8 +671,6 @@
       </div>
     </div>
   </section>
-
-
   <!-- Sponsor Section -->
   <section id="partners"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
@@ -674,25 +682,26 @@
 
     <div class="flex flex-wrap justify-center gap-4 mb-6">
       <button
-        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('sponsors')">Sponsors</button>
       <button
-        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('judges')">Judges</button>
       <button
-        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('mentors')">Mentors</button>
       <button
-        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('community')">Community</button>
       <button
-        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300"
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('media')">Media Partner</button>
     </div>
 
   </section>
 
-  <div id="sponsors" class="section relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+  <div id="sponsors"
+    class="section relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">Sponsors</span>
@@ -701,14 +710,15 @@
         Want to be featured here and be a part of this event and help us. Fill the form given below.
       </p>
     </div>
-    <div class="py-8">
+    <div class="py-8 hover:scale-110 transition-all duration-1000">
       <a href="https://fortune-cowl-835.notion.site/Hack-Heist-16c0d83def6380f59d61d21a29699096" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
         Sponsor Us
       </a>
     </div>
   </div>
-  <div id="judges" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+  <div id="judges"
+    class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">Judges</span>
@@ -717,14 +727,15 @@
         Want to become a Judge. Fill the form given below.
       </p>
     </div>
-    <div class="py-8">
+    <div class="py-8 hover:scale-110 transition-all duration-1000">
       <a href="" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
         Call for Judges
       </a>
     </div>
   </div>
-  <div id="mentors" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+  <div id="mentors"
+    class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">Mentors</span>
@@ -733,45 +744,58 @@
         Want to become a Mentor. Fill the form given below.
       </p>
     </div>
-    <div class="py-8">
+    <div class="py-8 hover:scale-110 transition-all duration-1000">
       <a href="" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
         Call for Mentors
       </a>
     </div>
   </div>
-  <div id="community" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+  <div id="community"
+    class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
-        Our <span class="text-[#db0c26]">Community </span>
+        Our <span class="text-[#db0c26]">Community Partner</span>
       </h2>
       <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
         Want to be featured here as a Community Partner. Fill the form given below.
       </p>
     </div>
-    <div class="py-8">
+    <div class="py-8 hover:scale-110 transition-all duration-1000">
       <a href="" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
         Call for Community Partner
       </a>
     </div>
   </div>
-  <div id="media" class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+  <div id="media"
+    class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-evenly">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">Media Partners</span>
       </h2>
-      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+      <!-- <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
         Want to be featured here and be a part of this event and help us. Fill the form given below.
-      </p>
+      </p> -->
     </div>
-    <div class="py-8">
-      <a href="" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md transition-all duration-300">
-        Join our Media Partners
-      </a>
+    <div class=" w-full flex flex-row justify-evenly px-8">
+      <div class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-md hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/media/campus.jpg" class="w-[80%] mx-auto duration-300"
+            width="400" height="400" alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">Campus Adda</h3>
+      </div>
+      <div class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-md hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/media/streets of meerut.jpg" class="w-[80%] mx-auto duration-300"
+            width="400" height="400" alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">Streets of Meerut</h3>
+      </div>
     </div>
-  </div>
   </div>
   <!-- FAQ Items -->
   <section id="faq" class="faq-section m-auto px-4 py-10 scroll-m-30">
@@ -1223,7 +1247,8 @@
           <a href="mailto:gdgoncampus@miet.ac.in" class="text-balance">gdgoncampus@miet.ac.in</a>
         </p>
         <p class="text-sm mt-2 hover:text-red-600 transition"> <a href="tel:+91 7248158511">+91 72481 58511</a></p>
-        <p class="text-xs md:text-sm mt-2 hover:text-red-600 transition">N.H. 58, Delhi-Roorkee Highway, Baghpat Bypass Road
+        <p class="text-xs md:text-sm mt-2 hover:text-red-600 transition">N.H. 58, Delhi-Roorkee Highway, Baghpat Bypass
+          Road
           Crossing, Meerut, Uttar Pradesh 250005</p>
       </div>
 
