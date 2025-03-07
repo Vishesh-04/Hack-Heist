@@ -121,6 +121,7 @@
     </div>
     </div>
   </header>
+
   <!-- Hero Section -->
   <section id="hero" class="inset-0 flex justify-center items-center h-screen ">
     <div class="absolute flex flex-col items-center text-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
@@ -147,7 +148,7 @@
           </div>
         </section>
         <div class="hover:scale-110 transition-all duration-1000">
-          <a href=""
+          <a href="https://dorahacks.io/hackathon/hackheist/detail"
             class="items-center justify-center mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xl font-[Montserrat] font-bold uppercase rounded-lg shadow-md ">
             Join the Heist
           </a>
@@ -155,6 +156,7 @@
       </div>
     </div>
   </section>
+
   <!-- About Section -->
   <section id="about" class="scroll-m-20 ">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white items-center justify-center">
@@ -202,6 +204,38 @@
         </div>
       </div>
   </section>
+
+  <!-- Theme Section -->
+  <section id="theme" class="scroll-m-20 ">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white items-center justify-center">
+      <h2 class="text-8xl font-bold font-[Bebas Neue] text-center mb-8 uppercase items-center">Our <span
+          class="text-[#db0c26]">Themes</span></h2>
+      <div class="flex items-center justify-center p-2">
+        <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
+          <!-- Image Section -->
+          <div class="sm:w-1/2 flex items-center justify-center pt-20 pb-20 ">
+            <div class="image object-center ">
+              <img src="src/image/SDG.png"
+                class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl backdrop-blur-lg border border-white/20 ">
+            </div>
+          </div>
+          <!-- Text Section -->
+          <div class="sm:w-1/2 flex items-center justify-start pb-20 sm:pb-0 shadow-lg backdrop-blur">
+            <div
+              class=" text-white text-lg sm:text-xl text-justify  md:text-2xl leading-relaxed px-6 sm:px-8 lg:px-12 font-[Montserrat]">
+              <p class="text-lg sm:text-xl md:text-2xl">
+                Dive deep into specific hackathon themes across Healthcare, Education, Natural Disasters, Environment etc and make sure
+                your project addresses one or more of the given UN 17 Sustanable Goals.
+              </p>
+              <p class="mt-6 text-lg sm:text-xl md:text-2xl">
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
   <!-- Track Section -->
   <section id="track"
     class="scroll-m-54 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
@@ -260,6 +294,7 @@
 
     </div>
   </section>
+
   <!-- Past Event Section -->
   <section id="pastevents"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
@@ -281,6 +316,7 @@
       </div>
     </div>
   </section>
+
   <!-- TimeLine Section -->
   <section id="timeline" class="scroll-m-20">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
@@ -668,6 +704,7 @@
       </div> -->
     </div>
   </section>
+
   <!-- Prize Section -->
   <section id="prize"
     class="scroll-m-54 relative w-full flex px-5 py-4 flex-col items-center justify-center overflow-hidden">
@@ -734,7 +771,8 @@
       </div>
     </div>
   </section>
-  <!-- Sponsor Section -->
+
+  <!-- Partner Section -->
   <section id="partners"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
@@ -758,10 +796,14 @@
         onclick="showSection('community')">Community</button>
       <button
         class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
+        onclick="showSection('gdg')">GDG Partners</button>
+      <button
+        class="btn items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md hover:scale-110 transition-all duration-1000"
         onclick="showSection('media')">Media Partner</button>
     </div>
 
   </section>
+  <section id="partner">
   <div id="sponsors"
     class="section relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
@@ -810,6 +852,23 @@
       <a href="" target="_blank"
         class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
         Call for Mentors
+      </a>
+    </div>
+  </div>
+  <div id="gdg"
+    class="section hidden relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white flex flex-col items-center justify-center">
+    <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white">
+      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
+        Our <span class="text-[#db0c26]">GDG Partners</span>
+      </h2>
+      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+        Want to become a GDG Partner. Fill the form given below.
+      </p>
+    </div>
+    <div class="py-8 hover:scale-110 transition-all duration-1000">
+      <a href="" target="_blank"
+        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
+        Call for GDG Partners
       </a>
     </div>
   </div>
@@ -867,6 +926,8 @@
       </div>
     </div>
   </div>
+  </section>
+
   <!-- FAQ Items -->
   <section id="faq" class="faq-section m-auto px-4 py-10 scroll-m-30">
     <div class="container mx-auto max-w-4xl">
@@ -983,6 +1044,7 @@
         </div>
       </div>
   </section>
+
   <!-- Team Section -->
   <section id="team"
     class="scroll-m-30 relative w-full flex px-5 py-10 flex-col items-center justify-center overflow-hidden">
@@ -1029,7 +1091,7 @@
                 </svg>
               </a>
 
-              <a href=""
+              <a href="https://github.com/harshitg0el"
                 class="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-gray-100 hover:bg-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="#333" viewBox="0 0 24 24">
                   <path
@@ -1306,7 +1368,7 @@
   </section>
   <section id="coordinator" class="my-10 scroll-m-30 px-4 pt-4 sectiont hidden">
     <div class="container mx-auto ">
-      <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center text-white mb-8">Our <span
+      <h2 class="text-6xl md:text-8xl font-bold font-[Bebas Neue] text-center text-white mb-8">Our <span
           class="text-[#db0c26]">Coordinator Team</span></h2>
     </div>
     <div class="font-[sans-serif]">
@@ -1576,6 +1638,7 @@
       </div>
     </div>
   </section>
+  
   <!-- footer section-->
   <footer class="py-12 px-6 text-white">
     <div class="max-w-7xl mx-auto grid md:grid-cols-4 grid-cols-2 gap-10">
