@@ -25,8 +25,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class=" bg-center bg-cover bg-repeat"
-  style="background-image: url(src/image/Background\ Image\ for\ hackHeist.png); background-size: cover; background-position: center center;">
+<body class="bg-center bg-cover bg-repeat" style="background-image: url('src/image/Background%20Image%20for%20hackHeist.png'); background-size: cover; background-position: center center;">
+
   <!-- Navbar Section -->
   <header
     class='fixed justify-center flex shadow-lg sm:px-10 lg:size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky lg:border-6 z-50 lg:border-red-600 lg:rounded-4xl'>
@@ -96,7 +96,7 @@
               </div>
               <div class="px-3 py-2 bg-[#db0c26] text-white">
                 <ul>
-                  <li><a href="">Participants</a></li>
+                  <li><a href="https://dorahacks.io/hackathon/hackheist/detail">Participants</a></li>
                   <li><a href="">Sponsors</a></li>
                   <li><a href="">Community Partners</a></li>
                 </ul>
@@ -123,7 +123,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="inset-0 flex justify-center items-center h-screen ">
+  <section id="hero" class="inset-0 flex justify-center items-center min-h-screen relative z-10">
     <div class="absolute flex flex-col items-center text-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
       <div class="lg:w-1/2 lg:h-auto">
         <img class="h-full w-full object-cover object-fill xl:scale-125 mt-10" src="src/image/hero1.png"
@@ -158,7 +158,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="scroll-m-20 ">
+  <section id="about" class="scroll-m-20 m-auto z-0">
     <div class="relative overflow-hidden w-full py-12 px-4 sm:px-6 pt-20 text-white items-center justify-center">
       <h2 class="text-8xl font-bold font-[Bebas Neue] text-center mb-8 uppercase items-center">About <span
           class="text-[#db0c26]">Hack
@@ -861,15 +861,71 @@
       <h2 class="text-8xl md:text-6xl font-bold font-[Bebas Neue] text-center mb-8 uppercase">
         Our <span class="text-[#db0c26]">GDG Partners</span>
       </h2>
-      <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
+      <!-- <p class="text-center text-xl mt-6 mx-2 font-[Montserrat]">
         Want to become a GDG Partner. Fill the form given below.
-      </p>
+      </p> -->
     </div>
-    <div class="py-8 hover:scale-110 transition-all duration-1000">
-      <a href="" target="_blank"
-        class="items-center justify-center mt-6 px-8 py-3 font-[Montserrat] bg-red-600 hover:bg-red-700 text-white text-xl font-bold uppercase rounded-lg shadow-md">
-        Call for GDG Partners
-      </a>
+    <div class="w-full flex sm:flex-row flex-col justify-evenly">
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/nd.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG New Delhi</h3>
+      </div>
+      <div class="pt-16 sm:hidden"></div>
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/cloud nd.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG Cloud New Delhi</h3>
+      </div>
+      <div class="pt-16 sm:hidden"></div>
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/cloud noida.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG Cloud Noida</h3>
+      </div>
+    </div>
+    <div class="w-full flex sm:flex-row flex-col justify-evenly pt-16">
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/dvsiet.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG On Campus DVSIET</h3>
+      </div>
+      <div class="pt-16 sm:hidden"></div>
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/scriet.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG On Campus SCRIET</h3>
+      </div>
+      <div class="pt-16 sm:hidden"></div>
+      <div
+        class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
+        <div
+          class="h-[22vh] aspect-square shadow-2xl rounded-xl overflow-hidden duration-150 grid place-content-center relative">
+          <img src="src/image/GDG/iimt.png" class="w-[80%] mx-auto duration-300" width="400" height="400"
+            alt="Example LOGO">
+        </div>
+        <h3 class="h-[5vh] w-full shadow-xl grid place-content-center rounded-xl text-xl">GDG On Campus IIMT</h3>
+      </div>
     </div>
   </div>
   <div id="community"
@@ -904,7 +960,7 @@
         Want to be featured here and be a part of this event and help us. Fill the form given below.
       </p> -->
     </div>
-    <div class="w-full flex lg:flex-row flex-col justify-evenly">
+    <div class="w-full flex sm:flex-row flex-col justify-evenly">
       <div
         class="w-auto space-y-8 flex justify-center items-center flex-col h-[40vh] shadow-2xl px-2 border-2 rounded-2xl backdrop-filter backdrop-blur-2xl hover:scale-110 transition-all duration-1000">
         <div

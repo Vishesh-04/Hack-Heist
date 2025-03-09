@@ -4,15 +4,6 @@ const events = [
     images: [
       { src: "/src/image/bharat1.jpg", description: "" },
       { src: "src/image/bharat2.jpg", description: "Judging Session" },
-      // { src: "/images/cocv1/image2.png", description: "Innovative ideas" },
-      // {
-      //   src: "/images/cocv1/image3.png",
-      //   description: "Food and premium ambience",
-      // },
-      // {
-      //   src: "/images/cocv1/image4.png",
-      //   description: "Swags and Happy Hackers",
-      // },
     ],
     description:
       "GDG On Campus MIET successfully hosted a 3-day hackathon at the India Expo Centre and Mart.  The event saw enthusiastic participation from students, with an impressive average of over 1500+ registrations.",
@@ -29,8 +20,6 @@ const events = [
         src: "src/image/m3.jpg",
         description: "Team Picture",
       },
-      // { src: "/images/cocv2/image3.jpg", description: "Swags for all!" },
-      // { src: "/images/cocv2/image4.jpg", description: "Food" },
     ],
     description:
       "GDG ON CAMPUS MIET hosted a speaker session on May 4, 2024, with ~250+ attendees.  Sponsored by Orkes, SquareBoat, and MIET, the event featured four speakers from Google and BluSmart, covering iOS development, Google Cloud migration, web solutions, and patent research.  Attendees gained valuable tech insights, and the event concluded with swag giveaways.",
@@ -44,11 +33,9 @@ const events = [
         src: "src/image/FETCH3.jpg",
         description: "Pitching innovative ideas",
       },
-      // { src: "/images/cocv3/image3.jpg", description: "Networking & fun" },
-      // { src: "/images/cocv3/image4.jpg", description: "Closing ceremony" },
     ],
     description:
-      "GDG On Campus MIET successfully hosted a 3-day hackathon at the India Expo Centre and Mart.  The event saw enthusiastic participation from students, with an impressive average of over 1000+ registrations.",
+      "🚀 Fetch-A-Thon, Fetch.ai’s first All-India hackathon, was a thrilling 24-hour coding marathon. Hosted at MIET Meerut, the event witnessed enthusiastic participation, with developers innovating in decentralized AI, smart contracts, and autonomous agents. 🤖✨",
   },
 ];
 
