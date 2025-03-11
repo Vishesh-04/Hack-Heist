@@ -318,3 +318,16 @@ ul.slicknav_nav {
 .prize{
   background: linear-gradient(to bottom right, #db0c26, #420608);
 }
+
+/* .tab-button {
+    @apply px-4 py-2 border rounded-md transition-all duration-300;
+  }
+  .tab-button.active {
+    @apply bg-blue-500 text-white;
+  }
+  .tab-content {
+    @apply hidden;
+  }
+  .tab-content.active {
+    @apply block;
+  } */
