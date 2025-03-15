@@ -3,7 +3,7 @@ const events = [
     title: "Bharat Shiksha Expo Hackathon",
     images: [
       { src: "/src/image/bharat1.jpg", description: "" },
-      { src: "src/image/bharat2.jpg", description: "Judging Session" },
+      { src: "/src/image/bharat2.jpg", description: "Judging Session" },
     ],
     description:
       "GDG On Campus MIET successfully hosted a 3-day hackathon at the India Expo Centre and Mart.  The event saw enthusiastic participation from students, with an impressive average of over 1500+ registrations.",
