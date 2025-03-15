@@ -12,7 +12,7 @@
        "/src/image/Kind/xyz-logo.png",
        "/src/image/Kind/cake.png",
        "/src/image/Kind/balsamiq.png",
-       "/src/image/Kind/Aops.png",
+       "/src/image/Kind/AoPS.png",
        "/src/image/Kind/aptos.webp",
      ],
    },
