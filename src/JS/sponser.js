@@ -1,5 +1,5 @@
  const sponsors = [
-   { tier: "Platform ", images: ["/src/image/Sponsor/dorahacks.webp"] },
+   
    {
      tier: "Platinum ",
      images: ["/src/image/Sponsor/SharpEconomy.png"],
@@ -16,6 +16,7 @@
        "/src/image/Kind/aptos.webp",
      ],
    },
+   { tier: "Platform ", images: ["/src/image/Sponsor/dorahacks.webp"] },
  ];
 
         const sponsorList = document.getElementById("sponsor-list");
