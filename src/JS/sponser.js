@@ -14,6 +14,7 @@
        "/src/image/Kind/balsamiq.png",
        "/src/image/Kind/AoPS.png",
        "/src/image/Kind/aptos.webp",
+       "/src/image/Kind/TPF(1).png",
      ],
    },
    { tier: "Platform ", images: ["/src/image/Sponsor/dorahacks.webp"] },
