@@ -4,7 +4,6 @@ const communityPartners = [
       "/src/image/Cp/CSHARP.png",
       "/src/image/Cp/GDGDTU.png",
       "/src/image/Cp/wow.jpg",
-      "/src/image/Cp/NextGen.png",
       "/src/image/Cp/WebForge.png",
       "/src/image/Cp/theDevArmy.png",
       "/src/image/Cp/Tech4Hack.jpg",
