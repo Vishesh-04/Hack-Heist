@@ -10,6 +10,7 @@ const communityPartners = [
       "/src/image/Cp/GrowthSquare.png",
       "/src/image/Cp/AssetMerkle.png",
       "/src/image/Cp/techsavvy.jpg",
+      "/src/image/Cp/techelites.jpg",
     ],
   },
 ];
