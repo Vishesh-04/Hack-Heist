@@ -11,6 +11,7 @@ const communityPartners = [
       "/src/image/Cp/AssetMerkle.png",
       "/src/image/Cp/techsavvy.jpg",
       "/src/image/Cp/techelites.jpg",
+      "/src/image/Cp/TecIllumination.jpg",
     ],
   },
 ];
